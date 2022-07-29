@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --black-primary: #000308;
+    --red-primary: #ba4250;
+    --white-secondary: #e8e8e8;
+    --white-primary: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--black-primary);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1199px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+.sedan_price {
+    font-weight: bold;
+}
+
+.dark-btn {
+    text-transform: uppercase;
+    background-color: var(--black-primary);
+    padding: 1rem 2rem;
+    color: var(--white-secondary);
+    display: block;
+    text-align: center;
+    margin: 1rem 0 0;
+    transition: all ease 300ms;
+    width: fit-content
+}
+
+.dark-btn:hover {
+    background-color: var(--white-secondary);
+    color: var(--black-primary);
+}
+
+.white-btn,
+.submit-btn {
+    text-transform: uppercase;
+    background-color: var(--white-secondary);
+    padding: 1rem 2rem;
+    color: var(--black-primary);
+    display: block;
+    text-align: center;
+    margin: 1rem 0 0;
+    transition: all ease 300ms;
+    width: fit-content;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: var(--red-primary);
+    color: var(--white-primary);
+    border-radius: 1rem;
+}
+
+.white-btn:hover,
+.submit-btn:hover {
+    background-color: var(--black-primary);
+    border-color: var(--white-primary);
+    color: var(--white-primary);
+}
+
+.pad-section {
+    padding: 3rem 0;
+    color: var(--white-secondary);
+}
+
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .cards_container {
+        grid-template-columns: 1fr;
+    }
+}

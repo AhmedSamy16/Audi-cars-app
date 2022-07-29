@@ -1,0 +1,67 @@
+
+.sedan_header {
+    background-image: url(../../../images/Sedan/sedan-Landing.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh);
+    background-position: center;
+}
+
+.sedan_header .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sedan_logo {
+    width: 30%;
+}
+
+.sedan_logo img {
+    max-width: 100%;
+}
+
+.sedan_text {
+    color: var(--white-primary);
+    width: 550px;
+}
+
+.sedan_text p  {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.sedan_text h1 {
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+
+@media (max-width: 992px) {
+    .sedan_text p {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+    .sedan_text h1 {
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sedan_header .container {
+        justify-content: center;
+        align-items: center;
+    }
+    .sedan_text {
+        text-align: center;
+        width: 100%;
+    }
+    .sedan_text p {
+        margin: 1rem 0;
+        font-size: 0.8rem;
+    }
+    .sedan_text h1 {
+        font-size: 2.8rem;
+    }
+}

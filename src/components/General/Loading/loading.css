@@ -1,0 +1,30 @@
+.loading {
+    display: flex;
+    justify-content: center;
+    margin: 60px auto;
+    width: fit-content;
+}
+
+.loading div {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--red-primary);
+    margin: 0 5px;
+    animation: up-and-down alternate linear 0.9s infinite;
+}
+
+.loading .loading_two {
+    animation-delay: 0.3s;
+}
+
+.loading .loading_three {
+    animation-delay: 0.6s;
+}
+
+@keyframes up-and-down {
+    to {
+        opacity: 0.2;
+        transform: translateY(-1.3rem);
+    }
+}

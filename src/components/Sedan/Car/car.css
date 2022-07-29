@@ -1,0 +1,7 @@
+.car_image {
+    background-image: url(../../../images/Sedan/sedan-car.png);
+    height: 470px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

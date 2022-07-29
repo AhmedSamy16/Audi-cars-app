@@ -1,0 +1,39 @@
+.numbers {
+    color: var(--white-primary);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.numbers__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.number__card {
+    position: relative;
+}
+
+.number__card img {
+    position: absolute;
+    width: 200px;
+    left: 25%;
+    top: -20%;
+    max-width: 100%;
+}
+
+.number__card img.speed {
+    top: -10%;
+    width: 200px;
+}
+
+.number__card img.seconds {
+    top: 0%;
+    width: 250px;
+    left: 57px;
+}
+
+.numbers__content .number__card h3 {
+    font-size: 4rem;
+    font-weight: normal;
+}

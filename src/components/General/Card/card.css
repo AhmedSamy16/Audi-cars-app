@@ -1,0 +1,30 @@
+.sedan_card {
+    margin: 0 auto;
+}
+
+.card_image img {
+    max-width: 100%;
+}
+
+.card_text  {
+    margin: 1.2rem 0;
+}
+
+.card_text h3 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.card_text p {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .card_text h3 {
+        font-size: 1rem;
+    }
+    .card_text p {
+        font-size: 0.7rem;
+    }
+}

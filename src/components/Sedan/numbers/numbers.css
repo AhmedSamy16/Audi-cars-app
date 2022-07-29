@@ -1,0 +1,53 @@
+.sedan_numbers {
+    background-color: var(--red-primary);
+    padding: 4rem 0;
+    color: var(--white-secondary);
+}
+
+.sedan_numbers .container {
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+    align-items: center;
+}
+
+.left_side .sedan_available {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.left_side h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.left_side .sedan_info {
+    margin: 1rem 0;
+}
+
+.left_side .sedan_info p {
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.middle_side {
+    flex-basis: 400px;
+}
+
+.middle_side img {
+    max-width: 100%;
+}
+
+.right_side p {
+    font-weight: bold;
+    line-height: 1.5;
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+    .sedan_numbers .container {
+        grid-template-columns: 1fr;
+        row-gap: 1rem;
+    }
+}

@@ -1,0 +1,64 @@
+.sedan_overview {
+    height: 470px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.sedan_overview .container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.overview_sedan_text {
+    color: var(--white-secondary);
+    width: 40%;
+}
+
+.overview_sedan_text .overview_sedan_title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
+
+.overview_sedan_text h2 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.overview_sedan_text .overview_sedan_info {
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+@media (max-width: 992px) {
+    .overview_sedan_text {
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .overview_sedan_text {
+        width: 85%;
+    }
+    .overview_sedan_text .overview_sedan_title {
+        font-size: 0.9rem;
+    }
+    .overview_sedan_text h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .overview_sedan_text .overview_sedan_title,
+    .overview_sedan_text .overview_sedan_info {
+        font-size: 0.7rem;
+        line-height: 2;
+    }
+    .overview_sedan_text h2 {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}

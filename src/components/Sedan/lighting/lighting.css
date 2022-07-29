@@ -1,0 +1,46 @@
+.sedan_lighting {
+    padding: 2rem 0;
+    color: var(--white-primary);
+}
+
+.sedan_lighting .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2%;
+    flex-wrap: wrap;
+}
+
+.lighting_text,
+.lighting_image {
+    flex-basis: 49%;
+}
+
+.lighting_text p {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.lighting_text h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 1rem 0;
+}
+
+.lighting_text small {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.lighting_image img {
+    max-width: 100%;
+}
+
+@media (max-width: 992px) {
+    .sedan_lighting .container {
+        flex-direction: column;
+    }
+    .lighting_image {
+        margin-top: 1.5rem;
+    }
+}
